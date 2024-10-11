@@ -1,6 +1,3 @@
-
-
-
 import sys  # Importing the sys module to access system-specific parameters and functions
 import time  # Importing the time module to add delays (simulate loading time)
 
@@ -12,6 +9,9 @@ RED = "\033[31m"  # Red text for warnings/errors
 
 # Print the welcome message at the start with color
 print(GREEN + "\nWelcome to InfoTechCenter V1.0\n" + RESET)
+
+timeToSleep = 1.75 #variable to set the time library to 1.75 seconds when called
+time.sleep(timeToSleep) #calling the time to sleep library with the variable timeToSleeps value
 
 x = 0  # Initial counter for the number of iterations
 ellipsis = 0  # Counter for the number of dots in the ellipsis animation
@@ -29,7 +29,7 @@ while x != 20:
     sys.stdout.write("\r" + message)
 
     # Add a delay to slow down the loop, so the animation looks smooth
-    time.sleep(0.5)
+    time.sleep(0.75)
 
     # Reset the ellipsis counter after 3 dots, so it loops back to 0
     if ellipsis == 4:
