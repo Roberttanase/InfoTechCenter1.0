@@ -7,7 +7,7 @@ import random
 from time import sleep
 
 def weather():
-    weatherForecast = ["snowy", "blizzard", "raining", "windy", "icy", "sunny"]
+    weatherForecast = ["snowy", "blizzard", "rainy", "windy", "icy", "sunny"]
     weatherCondition = random.choice(weatherForecast)
     return weatherCondition
 
@@ -24,6 +24,25 @@ def vehicleResponseSystem():
               " of the forecast of", weatherAlert, "weather conditions.")
         sleep(1)
         print("\nVRS system has been engaged only allowing you to drive 45mph.")
-
+    elif weatherAlert == "rainy":
+        print("\nThe National Weather Service has updated our alarm by 10 minutes becuase"
+              " of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("\nVRS system has been engaged only allowing you to drive 65mph.")
+    elif weatherAlert == "windy":
+        print("\nThe National Weather Service has updated our alarm by 5 minutes becuase"
+              " of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("\nVRS system has been engaged only allowing you to drive 65mph.")
+    elif weatherAlert == "icy":
+        print("\nThe National Weather Service has updated our alarm by 60 minutes becuase"
+              " of the forecast of", weatherAlert, "weather conditions.")
+        sleep(1)
+        print("\nVRS system has been engaged only allowing you to drive 35mph.")
+    else:
+        print("\nThe National Weather service is calling for", weatherAlert, "skies, drive carefully to get to your"
+        " destination!")
+        sleep(1)
+        print("\nVRS system has been disengaged")
 
 vehicleResponseSystem()
