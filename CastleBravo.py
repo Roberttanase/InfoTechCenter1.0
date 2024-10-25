@@ -1,5 +1,9 @@
 import sys  # Importing the sys module to access system-specific parameters and functions
 import time  # Importing the time module to add delays (simulate loading time)
+import random
+from time import sleep
+import random  # For random selection of gas levels and gas stations
+from time import sleep  # To add delays for simulating processing time
 
 # ANSI escape sequences for colors
 RESET = "\033[0m"  # Reset to default color
@@ -42,9 +46,7 @@ if x == 20:
 print("\n**********************************\n")
 print("Weather Branch\n")
 
-# Import Libraries
-import random
-from time import sleep
+
 
 # Function to simulate weather forecast
 def weather():
@@ -81,8 +83,7 @@ def vehicleResponseSystem():
 vehicleResponseSystem()
 
 
-import random  # For random selection of gas levels and gas stations
-from time import sleep  # To add delays for simulating processing time
+
 
 # Print a separator and a header
 print("\n**********************************\n")
